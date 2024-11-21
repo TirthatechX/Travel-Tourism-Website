@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+    background: url("istockphoto-1383836620-1024x1024.jpg");
+    background-size: cover;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    filter: drop-shadow(10px 10px 20px);
+    text-align: center;
+    
+    }
+    video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+        }
+        body{
+            margin: 100px;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .inpbox input{    
+    height: 25px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;}
+    h1{
+        color: whitesmoke;
+    }
+    p{
+        color: black;
+        font-size: 16px;}
+        .inpbox button{
+            background-color: rgb(8, 194, 194);
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 10%;
+        }
+  
+        button, a {
+            padding: 10px 25px;
+            margin: 5px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+        }
+        .skip-btn {
+            background-color: #d000ff;
+            color: white;
+        }
+
+        a.skip-btn {
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video src="C:\Users\TIRTHENDU\OneDrive\Desktop\Tirhtml\istockphoto-1366992486-640_adpp_is.mp4" loop muted autoplay="autoplay"></video>
+    <div class="container">
+        <form action="wbl.html" method="post" enctype="multipart/form-data">
+        <div class="heading"><h1 style="text-align: center;"><b><u>If You Are Interested In Any Of The Packages, Fill The Details:</u></b></h1></div>
+        <hr size="5px" color="aqua">
+        <div class="inpbox">
+            <p><b>Enter The First Name:</b>&nbsp;&nbsp;<input type="text" name="nm" placeholder="Enter your first name"><label for="Firstname" id="Firstname"></label>&nbsp;&nbsp;&nbsp;&nbsp;<b>Enter The Last Name:</b>&nbsp;&nbsp;<input type="text" name="nm" placeholder="Enter your last name"><label for="Lastname" id="Lastname"></label></p>
+        </div>
+        <div class="inpbox">
+            <p><b>Enter Your Phone Number:</b>&nbsp;<input type="tel" placeholder="91-"><label for="Phno" id="Phno"></label>&nbsp;&nbsp;&nbsp;&nbsp;<b>Enter Your Email Id:</b>&nbsp;<input type="email" placeholder="abc123@gmail.com"><label for="Mail" id="Mail"></label></p>
+        </div>
+        <div class="inpbox">
+            <p><b>Are You 18+:</b>&nbsp;<input type="checkbox" checked><label for="cb" id="cb"></label></p>
+        </div>
+        <div class="inpbox">
+            <p><b>Enter The Destination You Dreamt Of:</b>&nbsp;&nbsp;<input type="text" name="ds" placeholder="Enter your dream destination"><label for="des" id="des"></label></p></div>
+            <div class="inpbox">
+                <p><b>How Many Members Are Dreaming To Visit:</b>&nbsp;&nbsp;<input type="number" name="mem" placeholder="Enter the no. of peoples" min="1" max="7" value="1"><label for="mems" id="mems"></label></p>
+            </div>
+            <div class="inpbox">
+                <button onclick="window.location.href='wbl.html'"class="back-button">Send</button>&emsp;&emsp; <a href="wbx.html" class="skip-btn">Skip</a>
+            </form></div>
+       
+</body>
+</html> 
